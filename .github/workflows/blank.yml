@@ -28,7 +28,7 @@ jobs:
       - name: Open Original Repository
         uses: actions/checkout@v4
         with:
-          repository: 'AkeemSemperDataScience/BSIP-Lab-0-Example'
+          repository: 'AkeemSemperDataScience/BSIP-Lab-0-Example-Students'
           ref: 'main'
 
           #token: ${{ secrets.GH_PAT }}
