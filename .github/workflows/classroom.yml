@@ -27,4 +27,10 @@ jobs:
       env:
         PYTEST_RESULTS: "${{steps.pytest.outputs.result}}"
       with:
-        runners: pytest -vv
+        runners: pytest
+    - name: Test with pytest  
+        run:| 
+          coverage run -m pytest  -v -s  
+    - name: Generate Coverage Report  
+        run:|
+          coverage report -m
