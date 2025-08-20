@@ -27,4 +27,4 @@ jobs:
       env:
         PYTEST_RESULTS: "${{steps.pytest.outputs.result}}"
       with:
-        runners: pytest
+        runners: pytest -vv
